@@ -1,0 +1,22 @@
+.catalog {
+  padding: 50px 40px;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+
+  gap: 48px 46px;
+
+  grid-template-columns: repeat(1, 200px);
+
+  @include respond-to(sm) {
+    grid-template-columns: repeat(2, 200px);
+  }
+
+  @include respond-to(md) {
+    grid-template-columns: repeat(3, 200px);
+  }
+
+  @include respond-to(lg) {
+    grid-template-columns: repeat(4, 200px);
+  }
+}
