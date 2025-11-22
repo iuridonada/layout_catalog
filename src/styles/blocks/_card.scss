@@ -1,18 +1,14 @@
 .card {
-  width: 200px;
+  width: $card-width;
   box-sizing: border-box;
   text-align: center;
 
   transition: transform 300ms ease-in-out;
 
-  &:hover {
-    transform: scale(1.2);
-    z-index: 10;
-    position: relative;
-  }
-
   &:hover .card__title {
     color: #34568b;
+  }
+
 
     &__title {
       font-size: 1em;
@@ -46,4 +42,3 @@
       margin: 5px 0;
     }
   }
-}
